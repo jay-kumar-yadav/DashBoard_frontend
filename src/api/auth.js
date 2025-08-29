@@ -3,7 +3,7 @@ import axios from 'axios';
 // Use deployed backend URL for production, local for development
 const API_BASE_URL = window.location.hostname === 'localhost' 
   ? 'http://localhost:5000/api'
-  : 'https://dashboard-backend-2-x1a6.onrender.com/api';
+  : 'https://dashboard-backend-3-azxf.onrender.com/api';
 
 console.log('API Base URL:', API_BASE_URL);
 
