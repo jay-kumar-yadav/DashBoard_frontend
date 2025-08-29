@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // Create axios instance with base configuration
-const API_BASE_URL = 'https://dashboard-backend-1-weka.onrender.com/api'; // ✅ only one slash
+//const API_BASE_URL = 'https://dashboard-backend-1-weka.onrender.com/api'; 
+const API_BASE_URL = 'http://localhost:5000/api';// ✅ only one slash
 
 const api = axios.create({
   baseURL: API_BASE_URL,
