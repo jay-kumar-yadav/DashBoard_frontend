@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Create axios instance with base configuration
-const API_BASE_URL = 'https://dashboard-backend-8p96.onrender.com/api';
+const API_BASE_URL = 'https://dashboard-backend-1-weka.onrender.com/api'; // ✅ only one slash
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -32,7 +32,7 @@ api.interceptors.response.use(
 // Auth API methods
 export const authAPI = {
   login: (email, password) => api.post('/auth/login', { email, password }),
-  register: (name, email, password, passwordConfirm) => 
+  register: (name, email, password, passwordConfirm) =>
     api.post('/auth/register', { name, email, password, passwordConfirm }),
   getMe: () => api.get('/auth/me'),
 };
